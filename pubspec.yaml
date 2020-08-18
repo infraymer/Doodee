@@ -33,6 +33,7 @@ dependencies:
 
   # google_maps_flutter: ^0.5.30
   flutter_geofire: ^1.0.3
+  background_locator: ^1.1.13+1
   flutter_map:
   cupertino_icons: ^0.1.3
 
