@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>965463540812-sgq682thk0al32lvhccqbmcnbpd4tuth.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.965463540812-sgq682thk0al32lvhccqbmcnbpd4tuth</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCLe7einSeJK2W1q7xChA-RxWYu7zc3iZk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>965463540812</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.doodee</string>
+	<key>PROJECT_ID</key>
+	<string>doodee-9cb07</string>
+	<key>STORAGE_BUCKET</key>
+	<string>doodee-9cb07.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:965463540812:ios:4807a573d178ab0d42e0e9</string>
+	<key>DATABASE_URL</key>
+	<string>https://doodee-9cb07.firebaseio.com</string>
+</dict>
+</plist>
