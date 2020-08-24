@@ -13,9 +13,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Urban Market',
-      home: Scaffold(
-        body: AppMap()
-      ),
+      home: Scaffold(body: AppMap()),
     );
   }
 }
