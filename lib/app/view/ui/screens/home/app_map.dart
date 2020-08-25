@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_geofire/flutter_geofire.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:latlong/latlong.dart';
-import 'package:uuid/uuid.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-// import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:uuid/uuid.dart';
 
 class AppMap extends StatefulWidget {
   final VoidCallback onMapCreated;
