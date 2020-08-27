@@ -7,8 +7,11 @@ class GeoRepository {
   }
 
   Stream<Gpoint> listenGeoPoint(String id) =>
-      FirebaseDatabase.instance.reference().child('$id').onValue.map((event) {
-        event.snapshot.value;
-        return Gpoint(latitude: 1.0, longitude: 2.0);
+      FirebaseDatabase.instance.reference().child('geo').child('$id').onValue.map((event) {
+        if (event.snapshot.value == null) return null;
+        return Gpoint(
+          latitude: event.snapshot.value["lat"],
+          longitude: event.snapshot.value["lon"],
+        );
       });
 }

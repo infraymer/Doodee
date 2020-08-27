@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:dudi/parent/domain/model/parent_child.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:uuid/uuid.dart';
 
@@ -20,11 +21,12 @@ class ParentRepository {
     });
   }
 
-  Future<void> getChildren() async {
+  Future<List<ParentChild>> getChildren() async {
     final userId = await getParentId();
-    FirebaseFirestore.instance
+    final qs = await FirebaseFirestore.instance
         .collection('children')
         .where('parent', isEqualTo: '$userId')
         .get();
+    return qs.docs.map((e) => ParentChild.fromMap(e.data()).copyWith(id: e.id)).toList();
   }
 }
