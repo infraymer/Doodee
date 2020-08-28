@@ -1,6 +1,3 @@
-import 'package:dudi/child/data/child_repository.dart';
-import 'package:dudi/geo/domain/interactor/geo_interactor.dart';
-import 'package:dudi/parent/data/parent_repository.dart';
 import 'package:dudi/parent/presentation/parent_controller.dart';
 import 'package:dudi/parent/view/ui/screen/root_parent_screen.dart';
 import 'package:firebase_core/firebase_core.dart';

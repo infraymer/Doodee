@@ -31,7 +31,7 @@ class MapParentWidget extends StatelessWidget {
             return FlutterMap(
               options: MapOptions(
                 controller: _mapController,
-                center: point != null ? LatLng(point.latitude, point.longitude) : LatLng(51.5, -0.09),
+                center: point != null ? LatLng(point.lat, point.lon) : LatLng(51.5, -0.09),
                 zoom: 13.0,
                 interactive: true,
               ),
@@ -42,7 +42,7 @@ class MapParentWidget extends StatelessWidget {
                       .map((e) => Marker(
                     width: 30.0,
                     height: 30.0,
-                    point: LatLng(e.latitude, e.longitude),
+                    point: LatLng(e.lat, e.lon),
                     builder: (ctx) => ChildMarket(),
                   ))
                       .toList(),

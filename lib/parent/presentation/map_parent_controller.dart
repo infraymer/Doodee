@@ -19,7 +19,7 @@ class MapParentController extends GetxController {
   Future<void> _fetchData() async {
     final children = await _parentInteractor.getChildren();
     points.value =
-        children.map((e) => Gpoint(latitude: 0.0, longitude: 0.0)).toList();
+        children.map((e) => Gpoint(lat: 0.0, lon: 0.0)).toList();
     children.forEachIndexed((element, index) {
       final sub = _geoInteractor.listenGeoPoint(element.child).listen((event) {
         if (!event.isNull) points[index] = event;

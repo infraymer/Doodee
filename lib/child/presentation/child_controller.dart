@@ -10,7 +10,7 @@ class ChildController extends GetxController {
   final RxString errorMessage = RxString(null);
 
   ChildController() {
-    _childInteractor.getChildId();
+    init();
   }
 
   Future<void> init() async {

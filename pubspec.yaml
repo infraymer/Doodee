@@ -35,7 +35,8 @@ dependencies:
 
   # google_maps_flutter: ^0.5.30
   uuid: ^2.2.0
-  background_locator: ^1.1.13+1
+  background_locator: ^1.2.2+1
+  location_permissions: ^2.0.5
   flutter_map:
   shared_preferences: ^0.5.10
   cupertino_icons: ^0.1.3

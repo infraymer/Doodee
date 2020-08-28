@@ -55,6 +55,16 @@ android {
             signingConfig signingConfigs.debug
         }
     }
+
+    flavorDimensions "default"
+    productFlavors {
+        parent {
+            resValue "string", "app_name", "Doodee Parent"
+        }
+        child {
+            resValue "string", "app_name", "Doodee Child"
+        }
+    }
 }
 
 flutter {

@@ -1,21 +1,21 @@
 class Gpoint {
-  final double latitude;
-  final double longitude;
+  final double lat;
+  final double lon;
 
-  Gpoint({this.latitude, this.longitude});
+  Gpoint({this.lat, this.lon});
 
   factory Gpoint.fromMap(Map<String, dynamic> map) {
     return new Gpoint(
-      latitude: map['latitude'] as double,
-      longitude: map['longitude'] as double,
+      lat: map['lat'] as double,
+      lon: map['lon'] as double,
     );
   }
 
   Map<String, dynamic> toMap() {
     // ignore: unnecessary_cast
     return {
-      'latitude': this.latitude,
-      'longitude': this.longitude,
+      'lat': this.lat,
+      'lon': this.lon,
     } as Map<String, dynamic>;
   }
 }
